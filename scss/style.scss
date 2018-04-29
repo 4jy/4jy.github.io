@@ -1,0 +1,97 @@
+//
+// Variables
+//
+$global-margin: 15px;
+$global-muted: #a8a8a8;
+$global-color: darken($global-muted, 25);
+$global-background: #fff;
+$global-border-radius: 3px;
+$global-primary: #0177FA;
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+  color: $global-color;
+  font-size: 15px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 100%;
+  background: linear-gradient(45deg, #4bbfef 0%, #025bfa 100%);
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+}
+
+.Container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 $global-margin;
+  position: relative;
+}
+
+.Map-container {
+  position: relative;
+}
+
+#Map-svg {
+  width: 900px;
+  max-width: 100%;
+  height: auto;
+}
+
+.Location-nav {
+  margin-top: ($global-margin * 2);
+  color: rgba(#fff, 0.75);
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  li {
+    margin: $global-margin;
+    cursor: default;
+    user-select: none;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: rgba(#fff, 0.75);
+      opacity: 0;
+      transform: translateY(100%);
+      transition: opacity 0.25s linear, transform 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    
+    &:hover {
+      
+      &::after {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}
