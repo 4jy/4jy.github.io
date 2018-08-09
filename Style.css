@@ -1,0 +1,56 @@
+body {
+	margin:0;
+	padding:0;
+	text-shadow:1px 1px 1px rgba(0,0,0, 0.2);
+	font-weight:100;
+  	text-transform:uppercase;
+	font-family:reg;
+	color:#f3f3f3;
+	letter-spacing:3;
+}
+
+@font-face{
+	font-family:din;
+	src:url(Stuff/din.ttf);
+}
+@font-face{
+	font-family:cons;
+	src:url(Stuff/cons.ttf);
+}
+@font-face{
+	font-family:reg;
+	src:url(Stuff/GR.ttf);
+}
+
+#crown{
+    position:absolute; top:160px; left:0px; width:375px; text-align:center; z-index:50;
+    font-size:60px; font-family:cons;
+}
+
+#L1,#L2{
+	position:absolute; top:220px; left:105px; width:165px; height:1.4px; z-index:20;
+	background-color:#f3f3f3;
+	box-shadow:1px 1px 1px rgba(0,0,0, 0.2);
+}
+#L1{top:220px;}
+#L2{top:260px;}
+
+#month{
+    position:absolute; top:230px; left:0px; width:375px; text-align:center; z-index:50;
+    font-size:28.125px; font-family:din; letter-spacing:2;
+}
+
+#Clock{
+    position:absolute; top:316.8px; left:0px; width:375px; text-align:center; z-index:50;
+    font-size:12px; opacity:0.8;
+}
+
+#dots{
+    position:absolute; top:294.8px; left:0px; width:375px; text-align:center; z-index:50;
+    font-size:12.75px; letter-spacing:5;
+}
+
+#Cal{
+    position:absolute; top:275.5px; left:0px; width:375px; text-align:center; z-index:50;
+    font-size:11.25px; opacity:0.8;
+}
