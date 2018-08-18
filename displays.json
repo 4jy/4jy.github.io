@@ -1,49 +1,143 @@
 [
-	"LS EW1",
-	"LS EW10",
-	"LS EW11",
-	"LS EW13",
-	"LS EW14",
-	"LS EW15",
-	"LS EW16",
-	"LS EW172",
-	"LS EW173",
-	"LS EW176",
-	"LS EW177",
-	"LS EW178",
-	"LS EW179",
-	"LS EW180",
-	"LS EW181",
-	"LS EW19",
-	"LS EW197",
-	"LS EW198",
-	"LS EW199",
-	"LS EW2",
-	"LS EW20",
-	"LS EW200",
-	"LS EW202",
-	"LS EW205",
-	"LS EW206",
-	"LS EW21",
-	"LS EW212",
-	"LS EW22",
-	"LS EW24",
-	"LS EW27",
-	"LS EW3",
-	"LS EW31",
-	"LS EW33",
-	"LS EW35",
-	"LS EW37",
-	"LS EW4",
-	"LS EW42",
-	"LS EW45",
-	"LS EW47",
-	"LS EW48",
-	"LS EW5",
-	"LS EW50",
-	"LS EW51",
-	"LS EW52",
-	"LS EW6",
-	"LS EW8",
-	"LS EW92"
+	{
+		"name": "LS EW1"
+	},
+	{
+		"name": "LS EW10"
+	},
+	{
+		"name": "LS EW11"
+	},
+	{
+		"name": "LS EW13"
+	},
+	{
+		"name": "LS EW14"
+	},
+	{
+		"name": "LS EW15"
+	},
+	{
+		"name": "LS EW16"
+	},
+	{
+		"name": "LS EW172"
+	},
+	{
+		"name": "LS EW173"
+	},
+	{
+		"name": "LS EW176"
+	},
+	{
+		"name": "LS EW177"
+	},
+	{
+		"name": "LS EW178"
+	},
+	{
+		"name": "LS EW179"
+	},
+	{
+		"name": "LS EW180"
+	},
+	{
+		"name": "LS EW181"
+	},
+	{
+		"name": "LS EW19"
+	},
+	{
+		"name": "LS EW197"
+	},
+	{
+		"name": "LS EW198"
+	},
+	{
+		"name": "LS EW199"
+	},
+	{
+		"name": "LS EW2"
+	},
+	{
+		"name": "LS EW20"
+	},
+	{
+		"name": "LS EW200"
+	},
+	{
+		"name": "LS EW202"
+	},
+	{
+		"name": "LS EW205"
+	},
+	{
+		"name": "LS EW206"
+	},
+	{
+		"name": "LS EW21"
+	},
+	{
+		"name": "LS EW212"
+	},
+	{
+		"name": "LS EW22"
+	},
+	{
+		"name": "LS EW24"
+	},
+	{
+		"name": "LS EW27"
+	},
+	{
+		"name": "LS EW3"
+	},
+	{
+		"name": "LS EW31"
+	},
+	{
+		"name": "LS EW33"
+	},
+	{
+		"name": "LS EW35"
+	},
+	{
+		"name": "LS EW37"
+	},
+	{
+		"name": "LS EW4"
+	},
+	{
+		"name": "LS EW42"
+	},
+	{
+		"name": "LS EW45"
+	},
+	{
+		"name": "LS EW47"
+	},
+	{
+		"name": "LS EW48"
+	},
+	{
+		"name": "LS EW5"
+	},
+	{
+		"name": "LS EW50"
+	},
+	{
+		"name": "LS EW51"
+	},
+	{
+		"name": "LS EW52"
+	},
+	{
+		"name": "LS EW6"
+	},
+	{
+		"name": "LS EW8"
+	},
+	{
+		"name": "LS EW92"
+	}
 ]
