@@ -24,14 +24,39 @@
 </div>
 
 <script type="text/javascript">
-function mainUpdate(type){
-    if(type == "weather"){
-      document.getElementById('temp').innerHTML = weather.temperature + "&deg;";
+// function mainUpdate(type){
+//     if(type == "weather"){
+//       document.getElementById('temp').innerHTML = weather.temperature + "&deg;";
+//     }
+//     if(type == "battery"){
+//       document.getElementById('LevelDisplay').innerHTML = batteryPercent + "%";
+//     }
+// }
+ getWeather();
+    function getWeather(){
+        var city;
+        var state;
+        $.getJSON('http://www.geoplugin.net/json.gp?jsoncallback=?', function(data) {
+          console.log(JSON.stringify(data, null, 2));
+          var json = JSON.stringify(data, null, 2),
+              obj = JSON.parse(json);
+              city = obj.geoplugin_city;
+              console.log(city);
+              if (city == "Forster") {
+                  city = "Cessnock";
+              }
+              state = obj.geoplugin_regionCode;
+              console.log(state);
+              $.ajax('http://api.wunderground.com/api/c6dc8e785d943109/conditions/q/'+state+'/'+city+'.json', {
+                  dataType: 'jsonp',
+                  success: function(json) {
+                      document.getElementById('temp').innerHTML = json.current_observation.temp_c + "&deg;";
+                      // document.getElementById('desc').innerHTML = json.current_observation.weather;
+                      // document.getElementById('city').innerHTML = json.current_observation.display_location.city;
+                  }
+              });
+        });
     }
-    if(type == "battery"){
-      document.getElementById('LevelDisplay').innerHTML = batteryPercent + "%";
-    }
-}
 </script>
 
 <script>

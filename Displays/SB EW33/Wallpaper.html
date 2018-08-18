@@ -35,17 +35,42 @@ BATTERY_<a id="LevelDisplay">XX%</a>_<a id="StateDisplay">Battstate</a>
 </div>
 
 <script type="text/javascript">
-function mainUpdate(type){
-    if(type == "weather"){
-    var tempunit = (weather.celsius) ? 'C' : 'F';
-      document.getElementById('temp').innerHTML = weather.temperature + "&deg;";
-      document.getElementById('desc').innerHTML = weatherdesc[weather.conditionCode];
+// function mainUpdate(type){
+//     if(type == "weather"){
+//     var tempunit = (weather.celsius) ? 'C' : 'F';
+//       document.getElementById('temp').innerHTML = weather.temperature + "&deg;";
+//       document.getElementById('desc').innerHTML = weatherdesc[weather.conditionCode];
+//     }
+//     if(type == "battery"){
+//       document.getElementById('LevelDisplay').innerHTML = batteryPercent + "%";
+//       document.getElementById('StateDisplay').innerHTML = (batteryCharging) ? "Charging" : "Discharging";
+//     }
+// }
+ getWeather();
+    function getWeather(){
+        var city;
+        var state;
+        $.getJSON('http://www.geoplugin.net/json.gp?jsoncallback=?', function(data) {
+          console.log(JSON.stringify(data, null, 2));
+          var json = JSON.stringify(data, null, 2),
+              obj = JSON.parse(json);
+              city = obj.geoplugin_city;
+              console.log(city);
+              if (city == "Forster") {
+                  city = "Cessnock";
+              }
+              state = obj.geoplugin_regionCode;
+              console.log(state);
+              $.ajax('http://api.wunderground.com/api/c6dc8e785d943109/conditions/q/'+state+'/'+city+'.json', {
+                  dataType: 'jsonp',
+                  success: function(json) {
+                      document.getElementById('temp').innerHTML = json.current_observation.temp_c + "&deg;";
+                      document.getElementById('desc').innerHTML = json.current_observation.weather;
+                      // document.getElementById('city').innerHTML = json.current_observation.display_location.city;
+                  }
+              });
+        });
     }
-    if(type == "battery"){
-      document.getElementById('LevelDisplay').innerHTML = batteryPercent + "%";
-      document.getElementById('StateDisplay').innerHTML = (batteryCharging) ? "Charging" : "Discharging";
-    }
-}
 </script>
 
 <script>
