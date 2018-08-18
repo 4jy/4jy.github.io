@@ -1,0 +1,41 @@
+* {
+	overflow: hidden !important;
+}
+
+body {
+      margin:0;
+      padding:0;
+      text-shadow:1px 1px 0px rgba(0,0,0,0.2);
+      font-weight:100;
+      text-transform:uppercase;
+      font-family:ag;
+      color:#f5f5f5;
+      letter-spacing:1;
+      overflow: hidden !important;
+}
+
+@font-face{
+      font-family:ag;
+      src:url(Stuff/Avantgarde.ttf);
+}
+@font-face{
+      font-family:bo;
+      src:url(Stuff/blackout.ttf);
+}
+
+#Clock{
+      position:absolute; top:567px; left:30px; width:375px; text-align:left; z-index:10;
+      font-size:67.5px; font-family:bo; letter-spacing:3;
+}
+
+#Cal{
+      position:absolute; top:593.6px; left:-30px; width:375px; text-align:right; z-index:50;
+      font-size:16.875px;
+}
+
+#Weather{
+      position:absolute; top:617px; left:-30px; width:375px; text-align:right; z-index:10;
+      font-size:16.875px; 
+}
+
+

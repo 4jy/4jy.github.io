@@ -1,0 +1,52 @@
+* {
+    overflow: hidden !important;
+}
+
+body {
+	margin:0;
+	padding:0;
+	text-shadow:1px 1px 1px rgba(0,0,0, 0.2);
+	font-weight:100;
+    text-transform:uppercase;
+	font-family:aq;
+	color:#f3f3f3;
+	letter-spacing:0;
+    overflow: hidden !important;
+}
+
+@font-face{
+	font-family:aq;
+	src:url(Stuff/Aquatico.otf);
+}
+
+#R{
+    position:absolute; top:193.4px; left:75px; width:225px; height:100px; z-index:50;
+    background-color:none;
+    border:1px solid #f3f3f3;
+    box-sizing:border-box;
+    -webkit-filter:drop-shadow(1px 1px 0px rgba(0,0,0, 0.2));
+}
+
+#month{
+    position:absolute; top:243.5px; left:-82.5px; width:375px; text-align:right; z-index:50;
+    font-size:20.625px;
+}
+#year{
+    position:absolute; top:266.8px; left:-82.5px; width:375px; text-align:right; z-index:50;
+    font-size:15px;
+}
+
+#hour{
+    position:absolute; top:203.4px; left:-82.5px; width:375px; text-align:right; z-index:50;
+    font-size:20.625px;
+}
+#Mnte{
+    position:absolute; top:226.8px; left:-82.5px; width:375px; text-align:right; z-index:50;
+    font-size:15px;
+}
+
+.Container{
+    position:absolute; top:200px; left:82.5px; width:45px; height:45px; z-index:60;
+    font-size:2em;
+    -webkit-filter:drop-shadow(1px 1px 0px rgba(0,0,0, 0.2));
+}

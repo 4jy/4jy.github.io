@@ -1,0 +1,57 @@
+<html><head>
+<title>LS EW202 by Evelyn (@ev_ynw)</title>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" href="Style.css" type="text/css" media="screen"/>
+<script type="text/javascript" charset="utf-8" src="Config.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/lang.js"></script>
+</head>
+
+<body onload="init()">
+
+<div id="R"></div>
+
+<div id="hour"></div>
+
+<div id="Mnte">
+	<a id="minute"></a><a id="minutesunit"></a>
+</div>
+
+<div id="month"></div>
+
+<div id="year"></div>
+
+<div class="Container">
+<div class="Path">
+<svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <defs>
+        <mask id="mask" x="0" y="0" width="100%" height="100%">
+            <path d="M0,0 L0,100 L100,0 Z" fill="white"></path>
+            <text id="date" x="30%" y="25%" alignment-baseline="middle" text-anchor="middle"></text>
+        </mask>
+    </defs>
+    <path d="M0,0 L0,100 L100,0 Z" fill="#f3f3f3" mask="url(#mask)"></path>
+</svg>
+</div>
+</div>
+
+<div id="weekday" style="display:none;"></div>
+
+<script>
+(function(){
+    'use strict';
+    if (window.innerWidth === 320) {
+        document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale=0.85, maximum-scale=0.85, user-scalable=0');
+    } else if (window.innerWidth === 414) {
+        document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale=1.104, maximum-scale=1.104, user-scalable=0');
+    } else if (window.innerWidth === 425) {
+        document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale=1.133, maximum-scale=1.133, user-scalable=0');
+    } else if (window.innerWidth === 432) {
+        document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale=1.152, maximum-scale=1.152, user-scalable=0');
+    }
+}());
+</script>
+</body></html>
