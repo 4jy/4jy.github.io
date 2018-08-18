@@ -26,12 +26,16 @@
 <img id="Swipe" src="Stuff/Swipe.png"></img>
 
 <script type="text/javascript">
-function mainUpdate(type){
-    if(type == "weather"){
-      document.getElementById('temp').innerHTML = weather.temperature + "&deg;" + weather.celsius;
-      document.getElementById('city').innerHTML = weather.city;
+getWeather();
+    function getWeather(){
+        $.ajax('http://api.wunderground.com/api/c6dc8e785d943109/conditions/q/NSW/Cessnock.json', {
+            dataType: 'jsonp',
+            success: function(json) {
+                document.getElementById('temp').innerHTML = json.current_observation.temp_c + "&deg;";
+                document.getElementById('city').innerHTML = json.current_observation.display_location.city;
+            }
+        });
     }
-}
 </script>
 
 <script>

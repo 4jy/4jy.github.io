@@ -25,12 +25,6 @@
 </div>
 
 <script type="text/javascript">
-// function mainUpdate(type){
-//     if(type == "weather"){
-//       document.getElementById('temp').innerHTML = weather.temperature + "&deg;";
-//       document.getElementById('desc').innerHTML = weatherdesc[weather.conditionCode];
-//     }
-// }
 getWeather();
     function getWeather(){
         $.ajax('http://api.wunderground.com/api/c6dc8e785d943109/conditions/q/NSW/Cessnock.json', {

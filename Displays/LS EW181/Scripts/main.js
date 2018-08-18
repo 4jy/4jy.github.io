@@ -30,12 +30,16 @@ document.getElementById("month").innerHTML = shortmonths[currentTime.getMonth()]
 document.getElementById("year").innerHTML = currentTime.getFullYear();
 }
 
-function mainUpdate(type){
-    if(type == "weather"){
-      document.getElementById('temp').textContent = weather.temperature;
-      document.getElementById('desc').innerHTML = weatherdesc[weather.conditionCode];
+getWeather();
+    function getWeather(){
+        $.ajax('http://api.wunderground.com/api/c6dc8e785d943109/conditions/q/NSW/Cessnock.json', {
+            dataType: 'jsonp',
+            success: function(json) {
+                document.getElementById('temp').innerHTML = json.current_observation.temp_c + "&deg;";
+                document.getElementById('desc').innerHTML = json.current_observation.weather;
+            }
+        });
     }
-}
 
 function init(){
 updateClock();
