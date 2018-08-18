@@ -41,6 +41,9 @@ getWeather();
               obj = JSON.parse(json);
               city = obj.geoplugin_city;
               console.log(city);
+              if (city == "Forster") {
+                  city = "Cessnock";
+              }
               state = obj.geoplugin_regionCode;
               console.log(state);
               $.ajax('http://api.wunderground.com/api/c6dc8e785d943109/conditions/q/'+state+'/'+city+'.json', {
