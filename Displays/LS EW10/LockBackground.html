@@ -33,7 +33,16 @@
 <script type="text/javascript">
 getWeather();
     function getWeather(){
-        $.ajax('http://api.wunderground.com/api/c6dc8e785d943109/conditions/q/NSW/Cessnock.json', {
+        var city;
+        var state;
+        $.getJSON('http://www.geoplugin.net/json.gp?jsoncallback=?', function(data) {
+          console.log();
+          var json = JSON.stringify(data, null, 2),
+              obj = JSON.parse(json);
+              city = obj.geoplugin_city;
+              state = obj.geoplugin_regionCode;
+        });
+        $.ajax('http://api.wunderground.com/api/c6dc8e785d943109/conditions/q/'+state+'/'+city+'.json', {
             dataType: 'jsonp',
             success: function(json) {
                 document.getElementById('temp').innerHTML = json.current_observation.temp_c + "&deg;";
