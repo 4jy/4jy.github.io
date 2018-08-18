@@ -36,11 +36,13 @@ getWeather();
         var city;
         var state;
         $.getJSON('http://www.geoplugin.net/json.gp?jsoncallback=?', function(data) {
-          console.log();
+          console.log(JSON.stringify(data, null, 2));
           var json = JSON.stringify(data, null, 2),
               obj = JSON.parse(json);
               city = obj.geoplugin_city;
+              console.log(city);
               state = obj.geoplugin_regionCode;
+              console.log(state);
         });
         $.ajax('http://api.wunderground.com/api/c6dc8e785d943109/conditions/q/'+state+'/'+city+'.json', {
             dataType: 'jsonp',
