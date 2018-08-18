@@ -1,0 +1,42 @@
+body{
+      margin:0;
+      padding:0;
+      font-weight:100;
+      text-shadow:1px 1px 1px rgba(45,45,45,0.3);
+      font-family:light;
+      text-transform:uppercase;
+      color:#f3f3f3;
+      letter-spacing:1;
+}
+
+@font-face{
+      font-family:light;
+      src:url(Stuff/light.otf);
+}
+@font-face{
+      font-family:mereo;
+      src:url(Stuff/mereo.ttf);
+}
+
+#Widget{
+      position:absolute; top:0px; left:0px; width:375px; height:667px;
+}
+
+#Clock{
+      position:absolute; top:20%; left:0%; width:100%; text-align:center; z-index:50;
+      font-size:10vmin;
+}
+#ampm{font-size:7vmin;}
+
+#weekday{
+      position:absolute; top:25%; left:0%; width:100%; text-align:center; z-index:50;
+      font-size:10vmin; font-family:mereo; text-transform:capitalize;
+      color:#58a6ee;
+}
+
+#weatherIcon{
+      position:absolute; top:20%; left:56%; width:14%; z-index:0;
+}
+
+
+

@@ -1,0 +1,75 @@
+body{
+      margin:0;
+      padding:0;
+      font-weight:100;
+      text-shadow:1px 1px 2px rgba(100,100,100,0.3);
+      font-family:thin;
+      text-transform:capitalize;
+      color:#312c2d;
+      letter-spacing:0.8;
+}
+
+@font-face{
+      font-family:black;
+      src:url(Stuff/black.ttf);
+}
+@font-face{
+      font-family:thin;
+      src:url(Stuff/thin.ttf);
+}
+
+#Widget{
+      position:absolute; top:0px; left:0px; width:375px; height:667px;
+}
+
+#Analog{list-style:none;}
+.Analog li{position:absolute; top:0%; left:0%; width:100%; height:100%;}
+.Analog em{position:absolute; top:0%; left:0%; width:100%; height:100%;}
+
+#A-sec,#A-min,#A-hour{
+      position:absolute; top:15.8%; left:39.3%; width:2.6%; height:11.5%; z-index:18;
+}
+#A-hour{
+      background:url(Stuff/hourhand.png);
+      background-size:100% 100%;
+      top:15.7%;
+      z-index:16;
+}
+#A-min{
+      background:url(Stuff/minhand.png);
+      background-size:100% 100%;
+      top:15.7%;
+      z-index:17;
+}
+#A-sec{
+      background:url(Stuff/sechand.png);
+      background-size:100% 100%;
+      z-index:18;
+}
+
+#R{
+      position:absolute; top:16.6%; left:32%; width:36%; height:9%; z-index:-90;
+      background-color:#f2f2f2;
+      border:3px solid rgba(238,238,238,0);
+      border-radius:6px;
+      box-shadow:1px 1px 1px rgba(0,0,0, 0.7);
+}
+
+#C{
+      position:absolute; top:18.32%; left:35%; width:9.4%; height:5.3%; z-index:90;
+      background-color:none;
+      border:4.5px solid rgba(49,44,45,0.95);
+      border-radius:100%;
+}
+
+#Clock{
+      position:absolute; top:18.5%; left:49%; width:100%; text-align:left; z-index:50;
+      font-size:6.5vw; font-family:black; letter-spacing:1.6;
+}
+
+
+#Cal{
+      position:absolute; top:22.8%; left:49%; width:100%; text-align:left; z-index:50;
+      font-size:3.2vw;
+}
+

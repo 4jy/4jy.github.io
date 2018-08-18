@@ -1,0 +1,64 @@
+body {
+	margin:0;
+	padding:0;
+	text-shadow:1px 1px 0px rgba(0,0,0, 0.2);
+	font-weight:100;
+      text-transform:uppercase;
+	font-family:ap;
+	color:#f3f3f3;
+	letter-spacing:1;
+}
+
+@font-face{
+	font-family:glacial;
+	src:url(Stuff/GlacialB.otf);
+}
+@font-face{
+	font-family:light;
+	src:url(Stuff/Glacial.otf);
+}
+@font-face{
+	font-family:ap;
+	src:url(Stuff/Applegaramound.ttf);
+}
+
+#Widget{
+      position:absolute; top:0%; left:0%; width:100%; height:100%; z-index:0;
+      overflow:hidden;
+}
+
+#Container{
+      position:absolute; top:467px; left:0px; width:375px; height:667px; z-index:0;
+}
+
+#Clock{
+       position:absolute; top:23.35px; left:18.75px; width:112.5px; text-align:right; z-index:50;
+       font-size:37.5px; font-family:glacial;
+}
+#ampm{font-size:26.25px;}
+
+
+#Cal{
+       position:absolute; top:30px; left:150px; width:375px; text-align:left; z-index:50;
+       font-size:12.75px; opacity:0.8;
+}
+
+#desc{
+       position:absolute; top:50px; left:150px; width:97.5px; text-align:left; z-index:50;
+       font-size:11.25px; color:#68b8b1; opacity:0.8;
+}
+
+#temp{
+       position:absolute; top:36.7px; left:258.75px; width:56.25px; text-align:center; z-index:50;
+       font-size:20.625px; font-family:light; 
+}
+
+#L{
+       position:absolute; top:46.69px; left:142.5px; width:105px; height:0.5px; z-index:70;
+       background-color:#f3f3f3; opacity:0.6;
+}
+#R{
+       position:absolute; top:28.7px; left:258.75px; width:56.25px; height:36.7px; z-index:-50;
+       background-color:none;
+       border:solid 0.5px rgba(238,238,238,0.6);
+}

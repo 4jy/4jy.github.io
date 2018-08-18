@@ -1,0 +1,68 @@
+body{
+      margin:0;
+      padding:0;
+      font-weight:100;
+      text-shadow:1px 1px 1px rgba(55,55,55,0.4);
+      font-family:light;
+      text-transform:uppercase;
+      color:#f3f3f3;
+      letter-spacing:2;
+}
+
+@font-face{
+      font-family:light;
+      src:url(Stuff/light.otf);
+}
+@font-face{
+      font-family:reg;
+      src:url(Stuff/reg.otf);
+}
+
+#Widget{
+      position:absolute; top:0px; left:0px; width:375px; height:667px;
+}
+
+#weatherIcon{
+      position:absolute; top:78%; left:3%; width:94%; z-index:10;
+}
+
+#Clock{
+      position:absolute; top:78%; left:4%; width:100%; text-align:left; z-index:50;
+      font-size:9vmin; font-family:reg;
+}
+#ampm{font-size:6vmin;}
+
+
+#Cal{
+       position:absolute; top:84%; left:4%; width:100%; text-align:left; z-index:50;
+       font-size:3.2vmin;
+}
+
+#desc{
+       position:absolute; top:86.5%; left:4%; width:100%; text-align:left; z-index:50;
+       font-size:3.2vmin;
+}
+
+#city{
+       position:absolute; top:84%; right:4%; width:100%; text-align:right; z-index:50;
+       font-size:3.2vmin;
+}
+#country{
+       position:absolute; top:84%; right:4%; width:100%; text-align:right; z-index:50;
+       font-size:3.2vmin;
+}
+#temp{
+       position:absolute; top:88.5%; right:4%; width:100%; text-align:right; z-index:50;
+       font-size:8vmin; font-family:reg;
+}
+#HiLow{
+       position:absolute; top:86.5%; right:4%; width:100%; text-align:right; z-index:50;
+       font-size:3.2vmin; text-transform:capitalize;
+}
+
+
+#LevelDisplay{
+       position:absolute; top:89%; left:4%; width:25%; text-align:left; z-index:50;
+       font-size:3vmin;
+}
+

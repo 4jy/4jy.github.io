@@ -1,0 +1,32 @@
+body {
+	margin:0;
+	padding:0;
+	text-shadow:1px 1px 0px rgba(55,55,55,0.2);
+	font-weight:100;
+    text-transform:capitalize;
+	font-family:visitor;
+	color:#f3f3f3;
+	letter-spacing:1;
+}
+
+@font-face{
+	font-family:visitor;
+	src:url(visitor.ttf);
+}
+
+#Widget{
+	position:absolute; top:0px; left:0px; width:375px; height:667px;
+}
+
+#Clock{
+    position:absolute; top:78.4%; left:70.5%; width:15%; text-align:center; z-index:50;
+    font-size:5.5vw; 
+}
+
+#R{
+    position:absolute; top:78%; left:70%; width:15%; height:3%; z-index:-90;
+    background-color:none;
+    border:2px solid #f3f3f3;
+    box-sizing:border-box;
+    -webkit-filter:drop-shadow(1px 1px 0px rgba(55,55,55,0.2));
+}

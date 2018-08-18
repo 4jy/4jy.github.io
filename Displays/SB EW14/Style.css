@@ -1,0 +1,54 @@
+body{
+      margin:0;
+      padding:0;
+      font-weight:100;
+      text-shadow:1px 1px 2px rgba(10,10,10,0.3);
+      font-family:light;
+      text-transform:capitalize;
+      color:#f3f3f3;
+      letter-spacing:1.5;
+      opacity:0.8;
+}
+
+@font-face{
+      font-family:light;
+      src:url(Stuff/redux.otf);
+}
+@font-face{
+      font-family:bold;
+      src:url(Stuff/monsterrat.otf);
+}
+
+#Widget{
+      position:absolute; top:0px; left:0px; width:375px; height:667px; z-index:0;
+      overflow:hidden;
+}
+
+
+#Clock{
+       position:absolute; top:93.38px; left:0px; width:375px; text-align:center; z-index:50;
+       font-size:15px; font-family:bold; letter-spacing:3;
+}
+#ampm{text-transform:lowercase; font-size:9.375px;}
+
+
+#BottomContainer{
+      position:absolute; top:533.6px; left:0px; width:375px; height:100%; z-index:0;
+}
+#L{
+       position:absolute; top:0px; left:45px; width:285px; height:0.7px; z-index:20;
+       background-color:#f3f3f3;
+}
+#Cal{
+       position:absolute; top:13.34px; left:0px; width:375px; text-align:center; z-index:50;
+       font-size:11.25px; 
+}
+#Weather{
+       position:absolute; top:33.35px; left:0px; width:375px; text-align:center; z-index:90;
+       font-size:11.25px; 
+}
+#BatteryLevel{
+       position:absolute; top:53.36px; left:0px; width:375px; text-align:center; z-index:50;
+       font-size:11.25px; 
+}
+

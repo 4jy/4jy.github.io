@@ -1,0 +1,22 @@
+
+#User Guide# by Evelyn @ev_ynw
+(Please do not take this txt as your own)
+
+
+>> Installation
+LS widget: /var/mobile/Library/LockHTML
+HS widget: /var/mobile/Library/SBHTML
+
+Optimised for all iOS. To be applied with Xen HTML (repo: http://xenpublic.incendo.ws/). Fits all iPhone resolutions.
+Requires XenInfo for weather/battery components to work. This tweak is developed by June - available at http://junesiphone.com/xeninfo/
+
+
+>> Contact me
+Twitter: @ev_ynw
+Reddit: /u/yeahwell_mlgb
+Email: ev.ynam.w@gmail.com
+
+
+>> Credits
+Original code belongs to Dacal, Junesiphone & Matchstic.
+Big thanks to all.

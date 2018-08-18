@@ -1,0 +1,51 @@
+body{
+      margin:0;
+      padding:0;
+      font-weight:100;
+      text-shadow:0px 2px 2px rgba(55,55,55,0.4);
+      font-family:advent;
+      font-size:12px;
+      text-transform:uppercase;
+      color:#f3f3f3;
+      letter-spacing:2;
+}
+
+@font-face{
+      font-family:advent;
+      src:url(Stuff/advent.ttf);
+}
+
+#L{
+       position:absolute; top:613.64px; left:-2px; width:379px; height:1px; z-index:-20;
+       background-color:#f3f3f3;
+       opacity:0.8;
+}
+#C1,#C2,#C3,#C4{
+       position:absolute; top:608.3px; width:10.5px; height:10.5px; z-index:20;
+       box-shadow:1px 1px 1px rgba(0,0,0,0.2);
+       border-radius:100%;
+}
+#C1{left:41.625px; background-color:#5d9cec;}
+#C2{left:135.375px; background-color:#a0d468;}
+#C3{left:229.125px; background-color:#ed5565;}
+#C4{left:322.875px; background-color:#9C68D4;}
+
+#Clock{
+       position:absolute; top:587px; left:0px; width:93.75px; text-align:center; z-index:50;
+}
+
+
+#Cal{
+       position:absolute; top:587px; left:93.75px; width:93.75px; text-align:center; z-index:50;
+}
+
+
+#temp{
+       position:absolute; top:587px; left:187.5px; width:93.75px; text-align:center; z-index:50;
+}
+
+
+#LevelDisplay{
+       position:absolute; top:587px; left:281.25px; width:93.75px; text-align:center; z-index:50;
+}
+

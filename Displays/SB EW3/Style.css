@@ -1,0 +1,47 @@
+body{
+	margin:0;
+	padding:0;
+	font-weight:100;
+	text-shadow:0px 1px 1px rgba(0,0,0,0.2);
+	font-family:light;
+	text-transform:uppercase;
+	color:#f3f3f3;
+	letter-spacing:1;
+}
+
+@font-face{
+	font-family:bold;
+	src:url(Stuff/Bold.otf);
+}
+@font-face{
+      font-family:light;
+      src:url(Stuff/Light.otf);
+}
+
+#hour{
+       position:absolute; top:122px; left:0px; width:176.25px; text-align:right; z-index:50;
+       font-size:18px; font-family:bold;
+}
+#Min{
+       position:absolute; top:146px; left:0px; width:176.25px; text-align:right; z-index:50;
+       font-size:13.125px;
+}
+
+
+#Cal{
+       position:absolute; top:122px; left:198.75px; width:176.25px; text-align:left; z-index:50;
+       font-size:18px; text-transform:lowercase; font-family:bold;
+}
+
+
+#month{
+       position:absolute; top:146px; left:198.75px; width:176.25px; text-align:left; z-index:50;
+       font-size:13.125px;
+}
+
+
+#L1{
+       position:absolute; top:121px; left:187px; width:1px; height:39px; z-index:-70;
+       background-color:#f3f3f3;
+       opacity:0.6;
+}

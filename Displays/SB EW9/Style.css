@@ -1,0 +1,68 @@
+body{
+      margin:0;
+      padding:0;
+      font-weight:100;
+      text-shadow:0px 1px 1px rgba(0,0,0,0.2);
+      font-family:agenda;
+      text-transform:uppercase;
+      color:#f3f3f3;
+      letter-spacing:1.6;
+}
+
+@font-face{
+      font-family:agenda;
+      src:url(Stuff/Agenda.ttf);
+}
+@font-face{
+      font-family:master;
+      src:url(Stuff/master.ttf);
+}
+
+#Widget{
+      position:absolute; top:0%; left:0%; width:100%; height:100%; z-index:0;
+      overflow:hidden;
+}
+
+#Clock{
+       position:absolute; top:86.71px; left:0px; width:375px; text-align:center; z-index:50;
+       font-size:52.5px; font-family:master; letter-spacing:1.5; text-transform:lowercase;
+       line-height:200%;
+}
+
+
+#Cal{
+       position:absolute; top:73.37px; left:0px; width:375px; text-align:center; z-index:50;
+       font-size:15px;
+}
+
+
+#Weather{
+       position:absolute; top:173.42px; left:0px; width:375px; text-align:center; z-index:50;
+       font-size:15px;
+}
+
+
+#L{
+       position:absolute; top:293.48px; left:0px; width:375px; height:1px; z-index:20;
+       background-color:white;
+       opacity:0.6;
+}
+#BatteryLevel{
+       position:absolute; top:273.47px; left:0px; width:375px; text-align:center; z-index:50;
+       font-size:11.25px;
+}
+
+#BG{
+       position:absolute; top:0px; left:0px; width:375px; height:324.8px; z-index:0;
+       background-color:#4f4f4f;
+       opacity:0.5;
+       box-shadow:0px 0px 20px rgba(0,0,0, 0.7);
+}
+
+#R{
+       position:absolute; top:266.8px; left:0px; width:375px; height:560px; z-index:0;
+       background-color:#2d2d2d;
+       opacity:0.95;
+       border-top:1px solid rgba(238,238,238,0.6);
+       box-shadow:0px 0px 20px rgba(0,0,0, 0.6);
+}

@@ -1,0 +1,41 @@
+body {
+	margin:0;
+	padding:0;
+	text-shadow:1px 1px 0px rgba(0,0,0, 0.2);
+	font-weight:100;
+      text-transform:uppercase;
+	font-family:glacial;
+	color:#f3f3f3;
+	letter-spacing:1;
+}
+
+@font-face{
+	font-family:glacial;
+	src:url(Stuff/Glacial.otf);
+}
+
+
+#Clock{
+       position:absolute; top:153.4px; left:56.25px; width:56.25px; text-align:left; z-index:50;
+       font-size:10.5px;
+}
+#ampm{font-size:9px;}
+
+
+#Cal{
+       position:absolute; top:500px; left:262.5px; width:56.25px; text-align:right; z-index:50;
+       font-size:10.5px;
+}
+#weekday{display:none;}
+
+
+#L1{
+       position:absolute; top:160px; left:108.75px; width:210px; height:1px; z-index:70;
+       background-color:#f3f3f3;
+       opacity:0.6;
+}
+#L2{
+       position:absolute; top:507px; left:56.25px; width:213.75px; height:1px; z-index:70;
+       background-color:#f3f3f3;
+       opacity:0.6;
+}

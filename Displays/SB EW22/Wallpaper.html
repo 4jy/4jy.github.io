@@ -1,0 +1,77 @@
+<html><head>
+<title>SB EW22 by Evelyn (@ev_ynw)</title>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" href="Style.css" type="text/css" media="screen"/>
+<script type="text/javascript" charset="utf-8" src="Config.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/lang.js"></script>
+</head>
+
+<body onload="init()">
+
+<div id="Widget">
+<img id="weatherIcon" src="Stuff/Flex2/2.png"></img>
+
+<div id="Clock">
+<a id="hour"></a>:<a id="minute"></a><a id="ampm"></a>
+</div>
+
+<div id="Cal">
+<a id="weekday"></a> <a id="date"></a>.<a id="month"></a>
+</div>
+
+<div id="desc">wthr desc</div>
+
+<div id="city">Your city</div>
+<div id="temp">??&deg;C</div>
+<div id="HiLow">
+<a id="Max">Max: </a><a id="hightemp">??&deg;</a> / <a id="Min">Min: </a><a id="lowtemp">??&deg;</a>
+</div>
+
+<div id="LevelDisplay">__%</div>
+
+</div>
+
+<script type="text/javascript">
+function mainUpdate(type){
+    if(type == "weather"){
+      document.getElementById('temp').innerHTML = weather.temperature + "&deg;" + weather.celsius;
+      document.getElementById('desc').innerHTML = weatherdesc[weather.conditionCode];
+      document.getElementById('city').innerHTML = weather.city;
+      document.getElementById('weatherIcon').src = 'Stuff/' + IconSet + "/" + weather.conditionCode + ".png";
+      document.getElementById('hightemp').innerHTML = weather.high + "&deg;";
+      document.getElementById('lowtemp').innerHTML = weather.low + "&deg;";
+    }
+    if(type == "battery"){
+      document.getElementById('LevelDisplay').innerHTML = batteryPercent + "%";
+    }
+}
+</script>
+
+<script>
+(function(){
+    'use strict';
+    if (window.innerWidth === 320) {
+        document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale=0.85, maximum-scale=0.85, user-scalable=0');
+    } else if (window.innerWidth === 414) {
+        document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale=1.104, maximum-scale=1.104, user-scalable=0');
+    } else if (window.innerWidth === 425) {
+        document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale=1.133, maximum-scale=1.133, user-scalable=0');
+    } else if (window.innerWidth === 432) {
+        document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale=1.152, maximum-scale=1.152, user-scalable=0');
+    }
+}());
+(function(){
+    'use strict';
+    if (window.innerHeight === 812) {
+        document.getElementById("Widget").style.top = "145px";
+    } else {
+        document.getElementById("Widget").style.top = "0px";
+    }
+}());
+</script>
+</script>
+</body></html>

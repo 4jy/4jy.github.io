@@ -1,0 +1,78 @@
+body{
+      margin:0;
+      padding:0;
+      font-weight:100;
+      text-shadow:1px 1px 1px rgba(0,0,0,0.2);
+      font-family:light;
+      text-transform:uppercase;
+      color:#444;
+      letter-spacing:1;
+}
+
+@font-face{
+      font-family:coffee;
+      src:url(Stuff/Coffee.ttf);
+}
+@font-face{
+      font-family:KG;
+      src:url(Stuff/KG.ttf);
+}
+@font-face{
+      font-family:light;
+      src:url(Stuff/Light.otf);
+}
+
+#Widget{
+      position:absolute; top:0px; left:0px; width:375px; height:667px;
+}
+
+#R1{
+      position:absolute; top:-6%; left:0%; width:100%; height:20%; z-index:-90;
+      background-color:#f3f3f3;
+      opacity:0.7;
+}
+
+#BatteryBar{
+      position:absolute; top:14%; left:0%; width:30%; height:0.5%; z-index:60;
+      background:#444;
+}
+#BatteryBarBG{
+      position:absolute; top:14%; left:0%; width:100%; height:0.5%; z-index:60;
+      background:#444; opacity:0.4;
+}
+#BatteryLevel{
+      position:absolute; top:10.8%; left:5%; width:100%; text-align:left; z-index:50;
+      font-size:3.5vmin; font-family:coffee;
+}
+
+
+#Clock{
+      position:absolute; top:2%; right:6%; width:100%; text-align:right; z-index:50;
+      font-size:15vmin; font-family:KG; letter-spacing:2;
+      color:#f3f3f3;
+      -webkit-text-stroke: 2.5px #444;
+      text-shadow:3px 3px 0 #888;
+}
+
+
+#R2{
+      position:absolute; top:2%; left:5%; width:8.8%; height:3.2%; z-index:-90;
+      background-color:none;
+      border:2px solid #444;
+      box-sizing:border-box;
+}
+
+#weekday{
+      position:absolute; top:2.3%; left:5%; width:8.8%; text-align:center; z-index:50;
+      font-size:3.8vmin; font-family:coffee; letter-spacing:1.5;
+}
+
+#Cal{
+      position:absolute; top:5.8%; left:5%; width:100%; text-align:left; z-index:50;
+      font-size:3vmin;
+}
+
+#Weather{
+      position:absolute; top:8.3%; left:5%; width:100%; text-align:left; z-index:50;
+      font-size:3vmin;
+}

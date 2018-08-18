@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config><title>Perfect Weather</title><description>DDT Perfect Weather</description><icons>icons</icons>
+<demo>weather-drumdestroyerthemes-showers-scattered-day.png</demo>
+<default>weather-drumdestroyerthemes-no-weather.png</default>
+<mode value="#WCCODE#">Current Weather</mode>
+<mode value="#W0CODE#">Today's Weather</mode>
+<mode value="#W1CODE#">Tomorrow's Weather</mode>
+<mode value="#W2CODE#">2 Days Weather</mode>
+<mode value="#W3CODE#">3 Days Weather</mode>
+<mode value="#W4CODE#">4 Days Weather</mode>
+<mode value="#W5CODE#">5 Days Weather</mode>
+<mode value="#W6CODE#">6 Days Weather</mode>
+<mode value="#W7CODE#">7 Days Weather</mode>
+<condition><test>#AISDAY#=0</test>
+<condition><test>#MODE#=1</test><image>weather-drumdestroyerthemes-storm-night.png</image></condition>
+<condition><test>#MODE#=3</test><test>#MODE#=4</test><image>weather-drumdestroyerthemes-showers-scattered-night.png</image></condition>
+<condition><test>#MODE#=6</test><image>weather-drumdestroyerthemes-snow-scattered-night.png</image></condition>
+<condition><test>#MODE#=13</test><image>weather-drumdestroyerthemes-few-clouds-night.png</image></condition>
+<condition><test>#MODE#=15</test><test>#MODE#=16</test><image>weather-drumdestroyerthemes-clear-night.png</image></condition>
+</condition>
+<condition><test>#MODE#=1</test><image>weather-drumdestroyerthemes-storm-day.png</image></condition>
+<condition><test>#MODE#=2</test><image>weather-drumdestroyerthemes-thunderstorm.png</image></condition>
+<condition><test>#MODE#=6</test><image>weather-drumdestroyerthemes-snow-scattered-day.png</image></condition>
+<condition><test>#MODE#=8</test><image>weather-drumdestroyerthemes-snow.png</image></condition>
+<condition><test>#MODE#=9</test><test>#MODE#=7</test><image>weather-drumdestroyerthemes-hail.png</image></condition>
+<condition><test>#MODE#=10</test><test>#MODE#=11</test><test>#MODE#=12</test><image>weather-drumdestroyerthemes-haze.png</image></condition>
+<condition><test>#MODE#=1</test><image>weather-drumdestroyerthemes-storm-day.png</image></condition>
+<condition><test>#MODE#=3</test><test>#MODE#=4</test><image>weather-drumdestroyerthemes-showers-scattered-day.png</image></condition>
+<condition><test>#MODE#=5</test><image>weather-drumdestroyerthemes-showers.png</image></condition>
+<condition><test>#MODE#=13</test><image>weather-drumdestroyerthemes-few-clouds.png</image></condition>
+<condition><test>#MODE#=14</test><image>weather-drumdestroyerthemes-clouds.png</image></condition>
+<condition><test>#MODE#=15</test><test>#MODE#=16</test><image>weather-drumdestroyerthemes-clear.png</image></condition>
+</config>

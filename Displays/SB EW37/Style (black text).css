@@ -1,0 +1,49 @@
+body {
+      margin:0;
+      padding:0;
+      text-shadow:1px 1px 0px rgba(55,55,55,0.2);
+      font-weight:100;
+      text-transform:capitalize;
+      font-family:dolce;
+      color:#333;
+      letter-spacing:3.5;
+}
+
+@font-face{
+      font-family:dolce;
+      src:url(Stuff/DolceVita.ttf);
+}
+
+
+#Clock{
+       position:absolute; top:513.5px; right:52.5px; text-align:right; z-index:50;
+       font-size:11.25px; 
+       display:inline;
+       background-color:#f3f3f3;
+}
+
+#Cal{
+       position:absolute; top:530px; right:52.5px; text-align:right; z-index:50;
+       font-size:11.25px; 
+       display:inline;
+       background-color:#f3f3f3;
+}
+
+#dot{
+       font-size:7.5px;
+       opacity:0;
+}
+#dot1{
+       font-size:4.5px; letter-spacing:0.1;
+       opacity:1;
+}
+#space{
+       font-size:6px;
+}
+
+#BatteryLevel{
+       position:absolute; top:547px; right:52.5px; text-align:right; z-index:50;
+       font-size:11.25px; 
+       display:inline;
+       background-color:#f3f3f3;
+}

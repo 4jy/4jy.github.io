@@ -1,0 +1,56 @@
+body{
+      margin:0;
+      padding:0;
+      font-weight:100;
+      text-shadow:1px 1px 2px rgba(100,100,100,0.4);
+      font-family:capsuula;
+      text-transform:capitalize;
+      font-size:15px;
+      color:#f3f3f3;
+      letter-spacing:2;
+}
+
+@font-face{
+      font-family:capsuula;
+      src:url(Stuff/Capsuula.ttf);
+}
+
+
+#R1{
+      position:absolute; top:133.4px; left:67.5px; width:240px; height:26.7px; z-index:10;
+      background-color:#333;
+      border:solid 1px rgba(238,238,238,0.7); box-sizing:border-box;
+      opacity:0.7; overflow:hidden;
+}
+#Clock{
+      position:absolute; top:4px; left:5.625px; width:240px; text-align:left; z-index:50;
+}
+#ampm{text-transform:lowercase;}
+
+#Cal{
+      position:absolute; top:4px; left:0px; width:240px; text-align:center; z-index:50;
+}
+
+#weekday{
+      position:absolute; top:4px; right:5.625px; width:240px; text-align:right; z-index:50;
+}
+
+
+#R2{
+      position:absolute; top:506.9px; left:67.5px; width:240px; height:26.7px; z-index:10;
+      background-color:#333;
+      border:solid 1px rgba(238,238,238,0.7); box-sizing:border-box;
+      opacity:0.7; overflow:hidden;
+}
+#temp{
+      position:absolute; top:4px; left:5.625px; width:240px; text-align:left; z-index:50;
+}
+
+#HiLow{
+      position:absolute; top:4px; left:0px; width:240px; text-align:center; z-index:50;
+}
+
+#weatherIcon{
+      position:absolute; top:0px; right:5px; width:26.25px; z-index:50;
+}
+

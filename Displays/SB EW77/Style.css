@@ -1,0 +1,28 @@
+body {
+	margin:0;
+	padding:0;
+	text-shadow:1px 1px 0px rgba(0,0,0, 0.2);
+	font-weight:100;
+  	text-transform:uppercase;
+	font-family:bold;
+	color:#f3f3f3;
+	letter-spacing:1;
+}
+
+@font-face{
+	font-family:bold;
+	src:url(Stuff/Bold.ttf);
+}
+@font-face{
+    font-family:light;
+    src:url(Stuff/Light.ttf);
+}
+
+#Widget{
+	position:absolute; top:0px; left:0px; width:375px; height:667px;
+}
+#Clock{
+    position:absolute; top:36%; left:12%; width:100%; text-align:left; z-index:50;
+    font-size:6.4vmin;
+}
+#date,#month,#weekday,#separator{font-size:3.5vmin; font-family:light;}

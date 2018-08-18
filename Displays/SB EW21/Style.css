@@ -1,0 +1,55 @@
+body{
+      margin:0;
+      padding:0;
+      font-weight:100;
+      text-shadow:1px 2px 2px rgba(100,100,100,0.4);
+      font-family:ps;
+      text-transform:capitalize;
+      color:#384257;
+      letter-spacing:2;
+}
+
+@font-face{
+      font-family:afd;
+      src:url(Stuff/AFD.ttf);
+}
+@font-face{
+      font-family:ele;
+      src:url(Stuff/Elevate.ttf);
+}
+@font-face{
+      font-family:ps;
+      src:url(Stuff/ProductSans-Regular.ttf);
+}
+
+#Widget{
+      position:absolute; top:0%; left:0%; width:100%; height:100%; z-index:0;
+      overflow:hidden;
+}
+
+#Container{
+      position:absolute; top:130px; left:0px; width:375px; z-index:0;
+}
+
+#Clock{
+      position:absolute; top:0px; left:0px; width:375px; text-align:center; z-index:50;
+      font-size:37.5px; font-family:afd; text-transform:uppercase;
+}
+
+#Cal{
+      position:absolute; top:40px; left:0px; width:375px; text-align:center; z-index:50;
+      font-size:11.25px;
+}
+
+#weekday{
+      position:absolute; top:13.34px; left:0px; width:375px; text-align:center; z-index:50;
+      font-size:52.5px; font-family:ele;
+      color:#f3f3f3;
+}
+
+#weather{
+      position:absolute; top:56.7px; left:0px; width:375px; text-align:center; z-index:50;
+      font-size:11.25px;
+}
+
+

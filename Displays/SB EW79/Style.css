@@ -1,0 +1,39 @@
+body {
+	margin:0;
+	padding:0;
+	text-shadow:1px 1px 0px rgba(0,0,0, 0.2);
+	font-weight:100;
+  	text-transform:uppercase;
+	font-family:epf;
+	color:#f3f3f3;
+	letter-spacing:1;
+}
+
+@font-face{
+	font-family:epf;
+	src:url(Stuff/epf.otf);
+}
+
+#Widget{
+	position:absolute; top:0px; left:0px; width:375px; height:667px;
+}
+
+#R1{
+    position:absolute; top:40%; left:0%; width:100%; height:5%; z-index:50;
+    background-color:#111; opacity:0.7;
+}
+#R2{
+    position:absolute; top:47%; left:0%; width:100%; height:45%; z-index:50;
+    background-color:#111; opacity:0.7;
+}
+
+#Time{
+    position:absolute; top:41.8%; left:4%; width:100%; text-align:left; z-index:50;
+    font-size:3.2vmin;
+}
+
+#Weather{
+    position:absolute; top:41.8%; right:4%; width:100%; text-align:right; z-index:50;
+    font-size:3.2vmin;
+}
+
