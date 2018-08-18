@@ -1,0 +1,53 @@
+body{
+      margin:0;
+      padding:0;
+      font-weight:100;
+      text-shadow:1px 1px 1px rgba(0,0,0,0.3);
+      font-family:viga;
+      text-transform:uppercase;
+      color:#f3f3f3;
+      letter-spacing:1;
+}
+
+@font-face{
+      font-family:viga;
+      src:url(Stuff/Viga.otf);
+}
+@font-face{
+      font-family:autumn;
+      src:url(Stuff/AutumnChant.otf);
+}
+@font-face{
+      font-family:long;
+      src:url(Stuff/Bold.otf);
+}
+
+#weatherIcon{
+       position:absolute; top:203.5px; left:150px; width:75px; z-index:-20;
+       -webkit-filter:drop-shadow(1px 1px 1px rgba(0,0,0,0.3));
+}
+
+#R{
+       position:absolute; top:307px; left:123.75px; width:127.5px; height:1.4px; z-index:20;
+       background-color:#f3f3f3;
+
+}
+
+#Clock{
+       position:absolute; top:315.5px; left:0px; width:375px; text-align:center; z-index:50;
+       font-size:15.75px; letter-spacing:3;
+       font-family:long; text-transform:uppercase;
+}
+
+#hour{
+       position:absolute; top:270px; left:0px; width:375px; text-align:center; z-index:50;
+       font-size:33.75px; font-family:autumn;
+       text-transform:lowercase;
+       line-height:120%;
+}
+
+#HiLow{
+       position:absolute; top:190px; left:0px; width:375px; text-align:center; z-index:50;
+       font-size:11.25px; letter-spacing:0.8;
+}
+

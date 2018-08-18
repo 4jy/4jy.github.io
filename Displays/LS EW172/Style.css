@@ -1,0 +1,35 @@
+body{
+      margin:0;
+      padding:0;
+      font-weight:100;
+      text-shadow:1px 1px 1px rgba(100,100,100,0.4);
+      font-family:bl;
+      text-transform:capitalize;
+      color:#222;
+      letter-spacing:1;
+}
+
+@font-face{
+      font-family:bl;
+      src:url(Stuff/berlinsans.ttf);
+}
+
+
+#R1{
+      position:absolute; top:533.6px; right:0px; width:22.5px; height:49.4px; z-index:60;
+      background-color:#f3f3f3;
+      box-shadow:-2px 0px 10px rgba(0,0,0,0.4);
+}
+#R2{
+      position:absolute; top:538.3px; right:22.5px; width:187.5px; height:40px; z-index:50;
+      background-color:#f3f3f3;
+      box-shadow:-1px 0px 3px rgba(0,0,0,0.3);
+}
+
+#Time{
+      position:absolute; top:549px; right:22.5px; width:187.5px; text-align:center; z-index:50;
+      font-size:15.75px;
+}
+#ampm{text-transform:lowercase;}
+
+

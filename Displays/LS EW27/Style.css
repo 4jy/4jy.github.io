@@ -1,0 +1,33 @@
+body {
+	margin:0;
+	padding:0;
+	text-shadow:1px 1px 0px rgba(55,55,55,0.2);
+	font-weight:100;
+  	text-transform:lowercase;
+	font-family:cento;
+	color:#f3f3f3;
+	letter-spacing:0.8;
+	font-size:37.5px;
+}
+
+@font-face{
+	font-family:cento;
+	src:url(Stuff/NovecentoSans.otf);
+}
+
+
+#Clock{
+    position:absolute; top:613.5px; left:-22.5px; width:375px; text-align:right; z-index:50;
+    letter-spacing:0.3;
+}
+
+#weekday{
+    position:absolute; top:567px; left:-22.5px; width:375px; text-align:right; z-index:50;
+}
+
+
+#L{
+    position:absolute; top:615.5px; left:324.75px; width:26.25px; height:4.5px; z-index:-90;
+    background-color:#f3f3f3;
+	box-shadow:1px 1px 0px rgba(55,55,55,0.2);
+}

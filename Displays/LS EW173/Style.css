@@ -1,0 +1,41 @@
+body{
+      margin:0;
+      padding:0;
+      font-weight:100;
+      text-shadow:1px 1px 1px rgba(100,100,100,0.4);
+      font-family:bl;
+      text-transform:uppercase;
+      color:#f3f3f3;
+      letter-spacing:1;
+}
+
+@font-face{
+      font-family:bl;
+      src:url(Stuff/berlinsans.ttf);
+}
+@font-face{
+      font-family:brush;
+      src:url(Stuff/Brush.ttf);
+}
+@font-face{
+      font-family:gft;
+      src:url(Stuff/Graffiti.otf);
+}
+
+
+#Clock{
+      position:absolute; top:200px; left:0px; width:375px; text-align:center; z-index:50;
+      font-size:48.75px; font-family:brush;
+}
+#ampm{font-size:26.25px;}
+
+#Stroke{
+      position:absolute; top:196.75px; left:0px; width:375px; text-align:center; z-index:50;
+      font-size:135px; text-transform:none;
+      font-family:gft;
+}
+
+#Cal{
+      position:absolute; top:290px; left:-112.5px; width:375px; text-align:right; z-index:50;
+      font-size:15px;
+}

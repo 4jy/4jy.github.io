@@ -1,0 +1,53 @@
+body{
+      margin:0;
+      padding:0;
+      font-weight:100;
+      text-shadow:2px 2px 1px rgba(0,0,0,0.2);
+      font-family:santana;
+      text-transform:uppercase;
+      color:#f7f7f7;
+      letter-spacing:2;
+}
+
+@font-face{
+      font-family:galano;
+      src:url(Stuff/Galano.otf);
+}
+@font-face{
+      font-family:fiesta;
+      src:url(Stuff/Fiesta.ttf);
+}
+@font-face{
+      font-family:channel;
+      src:url(Stuff/channel.ttf);
+}
+
+
+#hour{
+       position:absolute; top:173.5px; left:0px; width:375px; height:66.7px; text-align:center; z-index:50;
+       font-size:33.75px; font-family:channel; 
+       letter-spacing:1.5; line-height:200%;
+       text-transform:capitalize;
+}
+
+#minute{
+       position:absolute; top:213.5px; left:0px; width:375px; text-align:center; z-index:50;
+       font-size:41.25px; font-family:galano; color:#F72F7F;
+}
+
+
+#Cal{
+       position:absolute; top:278px; left:0px; width:375px; text-align:center; z-index:50;
+       font-size:20.5px; font-family:fiesta; 
+       color:#666;
+}
+
+
+#R{
+       position:absolute; top:267px; left:140.5px; width:93.75px; height:40px; z-index:-80;
+       background-color:#f5f5f5;
+       box-shadow:0px 5px 2.5px rgba(50,50,50, 0.25);
+       border-radius:6;
+}
+
+

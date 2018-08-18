@@ -1,0 +1,54 @@
+body {
+	margin:0;
+	padding:0;
+	text-shadow:1px 1px 0px rgba(0,0,0, 0.2);
+	font-weight:100;
+      text-transform:uppercase;
+	font-family:cu;
+	color:#f3f3f3;
+	letter-spacing:1;
+}
+
+@font-face{
+      font-family:bass;
+      src:url(Stuff/Basscrw.ttf);
+}
+@font-face{
+      font-family:cu;
+      src:url(Stuff/cuyabra.otf);
+}
+@font-face{
+      font-family:cera;
+      src:url(Stuff/Cera.ttf);
+}
+
+#Widget{
+       position:absolute; top:0px; left:0px; width:375px; height:667px;
+}
+
+#L{
+       position:absolute; top:45%; left:29.5%; width:41%; height:0.15%; z-index:20;
+       background-color:#f3f3f3;
+}
+
+#Clock{
+       position:absolute; top:26.3%; left:0%; width:100%; text-align:center; z-index:80;
+       font-size:4vw; 
+}
+
+#Cal{
+       position:absolute; top:30%; left:0%; width:100%; text-align:center; z-index:80;
+       font-size:3vw; text-transform:capitalize;
+}
+
+
+#weekday{
+       position:absolute; top:32%; left:0.5%; width:100%; text-align:center; z-index:100;
+       font-size:20.5vw; font-family:bass; letter-spacing:5;
+}
+
+#Weather{
+       position:absolute; top:45.8%; left:-29.5%; width:100%; text-align:right; z-index:50;
+       font-size:2.4vw; font-family:cera; letter-spacing:4;
+}
+

@@ -1,0 +1,35 @@
+body {
+	margin:0;
+	padding:0;
+	text-shadow:1px -1px 0px rgba(32,32,32,0.2);
+	font-weight:100;
+      text-transform:lowercase;
+	font-family:es;
+	color:#f3f3f3;
+	letter-spacing:2;
+}
+
+@font-face{
+	font-family:es;
+	src:url(Stuff/EstandarBold.ttf);
+}
+
+#Widget{
+	   position:absolute; top:0px; left:0px; width:375px; height:667px;
+}
+
+#Ripped{
+       position:absolute; top:80%; left:37%; height:18%; z-index:50;
+}
+
+#Clock{
+       position:absolute; top:84%; left:63%; width:36%; text-align:center; z-index:80;
+       font-size:7.5vmin; text-transform:uppercase;
+}
+#ampm{font-size:5.6vmin;}
+
+#Cal{
+       position:absolute; top:89%; left:63%; width:36%; text-align:center; z-index:50;
+       font-size:3.8vmin; 
+}
+

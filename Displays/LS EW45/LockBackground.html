@@ -1,0 +1,58 @@
+<html><head>
+<title>LS EW45 by Evelyn (@ev_ynw)</title>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" href="Style.css" type="text/css" media="screen"/>
+<script type="text/javascript" charset="utf-8" src="Config.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="Scripts/lang.js"></script>
+</head>
+
+<body onload="init()">
+
+<img id="weatherIcon" src="Stuff/dubs/12.png"/>
+
+<div id="R"></div>
+
+<div id="hour"></div>
+<div id="Clock">
+	<a id="minute"></a> <a id="minutesunit"></a>
+</div>
+
+
+<div id="HiLow">
+	<a id="temp">??&deg;C</a>, <a id="hightemp">??&deg;</a>/<a id="lowtemp">??&deg;</a>
+</div>
+
+<div id="date" style="display:none;"></div>
+<div id="month" style="display:none;"></div>
+<div id="weekday" style="display:none;"></div>
+
+<script type="text/javascript">
+function mainUpdate(type){
+    if(type == "weather"){
+      document.getElementById('temp').innerHTML = weather.temperature + "&deg;" + weather.celsius;
+      document.getElementById('hightemp').innerHTML = weather.high + "&deg;";
+      document.getElementById('lowtemp').innerHTML = weather.low + "&deg;";
+      document.getElementById('weatherIcon').src = 'Stuff/' + IconSet + "/" + weather.conditionCode + ".png";
+    }
+}
+</script>
+
+<script>
+(function(){
+    'use strict';
+    if (window.innerWidth === 320) {
+        document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale=0.85, maximum-scale=0.85, user-scalable=0');
+    } else if (window.innerWidth === 414) {
+        document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale=1.104, maximum-scale=1.104, user-scalable=0');
+    } else if (window.innerWidth === 425) {
+        document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale=1.133, maximum-scale=1.133, user-scalable=0');
+    } else if (window.innerWidth === 432) {
+        document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale=1.152, maximum-scale=1.152, user-scalable=0');
+    }
+}());
+</script>
+</body></html>

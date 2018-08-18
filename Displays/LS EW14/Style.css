@@ -1,0 +1,69 @@
+body{
+      margin:0;
+      padding:0;
+      font-weight:100;
+      text-shadow:0px 1px 1px rgba(0,0,0,0.2);
+      font-family:nexa;
+      text-transform:uppercase;
+      color:#f3f3f3;
+      letter-spacing:1;
+}
+
+@font-face{
+      font-family:captain;
+      src:url(Stuff/AmericanCaptain.ttf);
+}
+@font-face{
+      font-family:nexa;
+      src:url(Stuff/Nexa.ttf);
+}
+@font-face{
+      font-family:kaushan;
+      src:url(Stuff/Kaushan.otf);
+}
+
+#Widget{
+      position:absolute; top:0px; left:0px; width:375px; height:667px;
+}
+
+#HourWrap{
+       position:relative; top:23.5%; left:0%; height:11.5%; overflow:hidden;
+}
+#hour{
+       position:absolute; top:20.5%; left:0%; width:100%; height:10%; text-align:center; z-index:50;
+       font-size:25vmin; font-family:captain; letter-spacing:1.5; 
+}
+
+#MinuteWrap{
+       position:relative; top:29%; left:0%; width:100%; height:10%; overflow:hidden;
+       -webkit-transform:rotate(180deg);
+}
+#minute{
+       position:absolute; top:18%; left:0%; width:100%; height:100%; text-align:center; z-index:50;
+       font-size:25vmin; font-family:captain; letter-spacing:1.5; 
+       -webkit-transform:rotate(180deg);
+}
+
+
+#Cal{
+       position:absolute; top:37%; left:0%; width:100%; height:100%; text-align:center; z-index:50;
+       font-size:4vmin; 
+}
+
+
+#weekday{
+       position:absolute; top:46%; left:4%; width:100%; height:100%; text-align:center; z-index:90;
+       font-size:13vmin; font-family:kaushan; text-transform:capitalize;
+       color:#eece6c; opacity:0.8;
+       -webkit-transform:rotate(-5deg);
+}
+
+
+#R{
+       position:absolute; top:35%; left:37.5%; width:25%; height:5.5%; z-index:80;
+       background-color:none;
+       border:solid 1.5px #f3f3f3;
+       box-sizing:border-box;
+}
+
+

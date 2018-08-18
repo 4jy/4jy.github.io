@@ -1,0 +1,49 @@
+body{
+      margin:0;
+      padding:0;
+      font-weight:100;
+      text-shadow:1px 1px 1px rgba(100,100,100,0.4);
+      font-family:reg;
+      text-transform:uppercase;
+      color:#f3f3f3;
+      letter-spacing:1;
+}
+
+@font-face{
+      font-family:sc;
+      src:url(Stuff/script.otf);
+}
+@font-face{
+      font-family:heavy;
+      src:url(Stuff/heavy.otf);
+}
+@font-face{
+      font-family:reg;
+      src:url(Stuff/reg.otf);
+}
+@font-face{
+      font-family:stroke;
+      src:url(Stuff/stroke.otf);
+}
+
+
+#Clock{
+      position:absolute; top:327px; left:0px; width:375px; text-align:center; z-index:50;
+      font-size:18.75px; letter-spacing:2;
+}
+
+#Stroke{
+      position:absolute; top:243.5px; left:0px; width:375px; text-align:center; z-index:50;
+      font-size:82.5px; font-family:stroke; color:#494A9E;
+}
+
+#weekday{
+      position:absolute; top:160px; left:0px; width:375px; text-align:center; z-index:50;
+      font-size:150px; font-family:heavy;
+}
+#Cal{
+      position:absolute; top:253.5px; left:0px; width:375px; text-align:center; z-index:50;
+      font-size:24.375px; font-family:sc; text-transform:capitalize;
+      -webkit-transform:rotateZ(-5deg);
+      color:#494A9E;
+}

@@ -1,0 +1,44 @@
+window.addEventListener("load", function() { 
+   document.body.style.width='100%';
+   document.body.style.height='100%';
+}, false);
+
+function updateClock() { 
+var currentTime = new Date();
+var currentHours = currentTime.getHours();
+var currentMinutes = currentTime.getMinutes() < 10 ? '0' + currentTime.getMinutes() : currentTime.getMinutes();
+var currentSeconds = currentTime.getSeconds() < 10 ? '0' + currentTime.getSeconds() : currentTime.getSeconds();
+var currentDate = currentTime.getDate() < 10 ? '0' + currentTime.getDate() : currentTime.getDate();
+timeOfDay = ( currentHours < 12 ) ? "am" : "pm";
+
+if (Clock == "24h"){
+	currentHours = ( currentHours < 10 ? "0" : "" ) + currentHours;
+	currentTimeString = currentHours + ":" + currentMinutes;
+}
+if (Clock == "12h"){
+	currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+	currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+	currentTimeString = currentHours + ":" + currentMinutes;
+}
+
+document.getElementById("hour").innerHTML = currentHours;
+document.getElementById("minute").innerHTML = currentMinutes;
+document.getElementById("ampm").textContent = timeOfDay;
+document.getElementById("weekday").innerHTML = shortdays[currentTime.getDay()];
+document.getElementById("date").textContent = currentDate;
+document.getElementById("month").innerHTML = shortmonths[currentTime.getMonth()];
+document.getElementById("year").innerHTML = currentTime.getFullYear();
+}
+
+function mainUpdate(type){
+    if(type == "weather"){
+      document.getElementById('temp').textContent = weather.temperature;
+      document.getElementById('desc').innerHTML = weatherdesc[weather.conditionCode];
+    }
+}
+
+function init(){
+updateClock();
+mainUpdate();
+setInterval("updateClock();", 1000);
+}

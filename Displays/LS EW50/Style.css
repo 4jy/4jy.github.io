@@ -1,0 +1,72 @@
+body {
+	margin:0;
+	padding:0;
+	text-shadow:1px -1px 0px rgba(32,32,32,0.2);
+	font-weight:100;
+       text-transform:uppercase;
+	font-family:suit;
+	color:#f3f3f3;
+	letter-spacing:1;
+}
+
+@font-face{
+	font-family:rounded;
+	src:url(Stuff/Rounded.ttf);
+}
+@font-face{
+	font-family:suit;
+	src:url(Stuff/Suit.ttf);
+}
+#Top,#Bottom{
+       position:absolute; top:0px; left:0px; width:375px; height:667px;
+}
+
+#RB1{
+       position:absolute; top:-6%; left:0%; width:100%; height:12%; z-index:-90;
+       background-color:#0f0f0f;
+       box-shadow:1px -1px 0px rgba(32,32,32,0);
+}
+#RW1{
+       position:absolute; top:0%; left:0%; width:100%; height:8%; z-index:-100;
+       background-color:#f3f3f3;
+       opacity:0.4;
+       box-shadow:1px -1px 0px rgba(32,32,32,0);
+}
+#RB2{
+       position:absolute; top:95%; left:0%; width:100%; height:5%; z-index:-90;
+       background-color:#0f0f0f;
+       box-shadow:1px -1px 0px rgba(32,32,32,0);
+}
+#RW2{
+       position:absolute; top:93%; left:0%; width:100%; height:7%; z-index:-100;
+       background-color:#f3f3f3;
+       opacity:0.4;
+       box-shadow:1px -1px 0px rgba(32,32,32,0);
+}
+
+#Clock{
+       position:absolute; top:2%; left:0%; width:100%; text-align:center; z-index:80;
+       font-size:3vw; 
+}
+
+#date{
+       position:absolute; top:2%; right:70%; width:100%; text-align:right; z-index:50;
+       font-size:3vw;
+}
+
+#LevelDisplay{
+       position:absolute; top:2%; left:70%; width:100%; text-align:left; z-index:50;
+       font-size:3vw;
+}
+
+#lock{
+       position:absolute; top:95.5%; left:46.5%; width:7%; z-index:50;
+       -webkit-filter:drop-shadow(1px -1px 0px rgba(32,32,32,0.2));
+
+}
+#Unlock{
+       position:absolute; top:93.4%; left:0%; width:100%; text-align:center; z-index:50;
+       font-size:2.2vw; font-family:rounded; letter-spacing:5;
+       color:#111;
+}
+

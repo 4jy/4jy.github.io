@@ -1,0 +1,43 @@
+body {
+	margin:0;
+	padding:0;
+	text-shadow:1px 1px 1px rgba(0,0,0, 0.2);
+	font-weight:100;
+  	text-transform:uppercase;
+	font-family:ar;
+	color:#f3f3f3;
+	letter-spacing:2;
+}
+
+@font-face{
+	font-family:yk;
+	src:url(Stuff/Yikes.ttf);
+}
+@font-face{
+	font-family:ar;
+	src:url(Stuff/Archive.ttf);
+}
+@font-face{
+	font-family:wd;
+	src:url(Stuff/Words.ttf);
+}
+
+#hour{
+    position:absolute; top:146.7px; left:0px; width:375px; text-align:center; z-index:50;
+    font-size:60px;
+}
+#minute{
+    position:absolute; top:200px; left:0px; width:375px; text-align:center; z-index:50;
+    font-size:60px; 
+}
+
+#Cal{
+    position:absolute; top:320px; left:0px; width:375px; text-align:center; z-index:50;
+    font-size:10.125px; font-family:yk;
+}
+
+#hello{
+    position:absolute; top:266.8px; left:0px; width:375px; text-align:center; z-index:50;
+    font-size:45px; font-family:wd; text-transform:lowercase;
+}
+

@@ -1,0 +1,46 @@
+body {
+	margin:0;
+	padding:0;
+	text-shadow:1px 1px 0px rgba(0,0,0, 0.2);
+	font-weight:100;
+  	text-transform:uppercase;
+	font-family:light;
+	color:#f5f5f5;
+	letter-spacing:1;
+}
+
+@font-face{
+	font-family:light;
+	src:url(Stuff/light.otf);
+}
+@font-face{
+	font-family:deco;
+	src:url(Stuff/deco.ttf);
+}
+@font-face{
+	font-family:df;
+	src:url(Stuff/dafoe.ttf);
+}
+
+
+#R{
+	position:absolute; top:233.5px; left:101.25px; width:172.5px; height:33.35px; z-index:20;
+	background-color:none;
+	outline:1px solid #f5f5f5;
+}
+
+#hour{
+	position:absolute; top:192px; left:0px; width:375px; text-align:center; z-index:50;
+	font-size:33.75px; font-family:deco;
+}
+
+#Minutes{
+    position:absolute; top:245.5px; left:0px; width:375px; text-align:center; z-index:50;
+    font-size:45px; font-family:df; text-transform:lowercase;
+    color:#a18bca;
+}
+
+#Cal{
+    position:absolute; top:243.5px; left:0px; width:375px; text-align:center; z-index:50;
+    font-size:13.5px;
+}

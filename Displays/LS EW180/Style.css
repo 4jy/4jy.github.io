@@ -1,0 +1,64 @@
+body{
+      margin:0;
+      padding:0;
+      font-weight:100;
+      text-shadow:1px 1px 0px rgba(100,100,100,0.4);
+      font-family:archive;
+      text-transform:uppercase;
+      color:#f5f5f5;
+      letter-spacing:1;
+}
+
+@font-face{
+      font-family:archive;
+      src:url(Stuff/Archive.ttf);
+}
+@font-face{
+      font-family:black;
+      src:url(Stuff/black.ttf);
+}
+@font-face{
+      font-family:hollow;
+      src:url(Stuff/hollow.ttf);
+}
+@font-face{
+      font-family:stroke;
+      src:url(Stuff/stroke.otf);
+}
+
+
+#hour{
+      position:absolute; top:180px; left:0px; width:375px; text-align:center; z-index:30;
+      font-size:75px; letter-spacing:2; font-family:hollow;
+}
+
+#Minutes{
+      position:absolute; top:230px; left:0px; width:375px; text-align:center; z-index:50;
+      font-size:19.5px; font-family:black; color:#F0D74A;
+}
+#ampm{
+      position:absolute; top:218.8px; left:24.375px; width:375px; text-align:center; z-index:40;
+      font-size:33px; font-family:black; color:#444;
+}
+
+.Container{
+      position:absolute; top:260px; left:112.5px; width:150px; height:150px; z-index:50;
+      -webkit-filter:drop-shadow(1px 1px 0px rgba(0,0,0, 0.2));
+      font-size:0.5em;
+}
+
+#L1{
+      position:absolute; top:307px; left:120px; width:48.75px; height:1.4px; z-index:50;
+      background-color:#f5f5f5;
+}
+
+#L2{
+      position:absolute; top:307px; left:206.25px; width:48.75px; height:1.4px; z-index:50;
+      background-color:#f5f5f5;
+}
+
+#temp{
+      position:absolute; top:300px; left:0px; width:375px; text-align:center; z-index:40;
+      font-size:12.375px; 
+}
+

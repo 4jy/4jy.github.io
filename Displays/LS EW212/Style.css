@@ -1,0 +1,38 @@
+body{
+      margin:0;
+      padding:0;
+      font-weight:100;
+      text-shadow:1px 1px 1px rgba(100,100,100,0.3);
+      font-family:reg;
+      text-transform:uppercase;
+      color:#f3f3f3;
+      letter-spacing:1;
+}
+@font-face{
+      font-family:reg;
+      src:url(Stuff/GR.ttf);
+}
+@font-face{
+      font-family:decor;
+      src:url(Stuff/decor.ttf);
+}
+@font-face{
+      font-family:mid;
+      src:url(Stuff/Midnight.otf);
+}
+
+#weekday{
+      position:absolute; top:186.8px; left:0px; width:375px; text-align:center; z-index:50;
+      font-size:60px; font-family:decor; text-transform:capitalize; 
+      -webkit-transform:rotateZ(-10deg);
+}
+
+#Clock{
+      position:absolute; top:260px; left:187.5px; width:93.75px; text-align:center; z-index:50;
+      font-size:30px; font-family:mid;
+}
+
+#Cal{
+      position:absolute; top:293.5px; left:187.5px; width:93.75px; text-align:center; z-index:50;
+      font-size:11.25px; 
+}

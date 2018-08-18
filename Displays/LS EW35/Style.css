@@ -1,0 +1,53 @@
+body {
+	margin:0;
+	padding:0;
+	text-shadow:1px 1px 0px rgba(0,0,0, 0.2);
+	font-weight:100;
+      text-transform:uppercase;
+	font-family:bold;
+	color:#444;
+	letter-spacing:1;
+}
+
+@font-face{
+	font-family:bold;
+	src:url(Stuff/DolceVita.ttf);
+}
+@font-face{
+	font-family:office;
+	src:url(Stuff/electedoffice.ttf);
+}
+
+
+#R1{
+       position:absolute; top:240px; left:131.25px; width:112.5px; height:112.5px; z-index:-70;
+       background-color:#f2f2f2;
+       box-shadow:2px 2px 5px rgba(45,45,45,0.5);
+}
+#R2{
+       position:absolute; top:280px; left:112.5px; width:150px; height:36.7px; z-index:-70;
+       background-color:#444;
+       box-shadow:2px 2px 5px rgba(45,45,45,0.5);
+       -webkit-transform:rotateZ(-12deg);
+}
+
+#ampm{
+       position:absolute; top:247px; left:-137px; width:375px; text-align:right; z-index:50;
+       font-size:11.25px;
+}
+
+#hour{
+       position:absolute; top:245.5px; left:137px; width:105px; text-align:left; z-index:50;
+       font-size:20.625px; font-family:bold;
+}
+#minute{
+       position:absolute; top:327px; left:133px; width:105px; text-align:right; z-index:50;
+       font-size:20.625px; font-family:bold;
+}
+
+#weekday{
+       position:absolute; top:285.5px; left:112.5px; width:150px; text-align:center; z-index:50;
+       font-size:23.625px; font-family:office;
+       color:#f5f5f5;
+       -webkit-transform:rotateZ(-12deg);
+}

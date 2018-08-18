@@ -1,0 +1,47 @@
+body{
+      margin:0;
+      padding:0;
+      font-weight:100;
+      text-shadow:1px 1px 1px rgba(100,100,100,0.4);
+      font-family:reg;
+      text-transform:uppercase;
+      color:#f3f3f3;
+      letter-spacing:1;
+}
+@font-face{
+      font-family:bold;
+      src:url(Stuff/Bold.otf);
+}
+@font-face{
+      font-family:reg;
+      src:url(Stuff/Regular.otf);
+}
+
+#temp{
+      position:absolute; top:153.41px; left:0px; width:375px; text-align:center; z-index:50;
+      font-size:37.5px; font-family:bold; 
+}
+#L1{
+      position:absolute; top:186.76px; left:71.25px; width:82.5px; height:1.4px; z-index:50;
+      background-color:#f3f3f3; box-shadow:1px 1px 1px rgba(100,100,100,0.4);
+}
+#L2{
+      position:absolute; top:186.76px; left:221.25px; width:82.5px; height:1.4px; z-index:50;
+      background-color:#f3f3f3; box-shadow:1px 1px 1px rgba(100,100,100,0.4);
+}
+
+#weekday{
+      position:absolute; top:200px; left:3px; width:375px; text-align:center; z-index:50;
+      font-size:26.25px; letter-spacing:10;
+}
+
+#month{
+      position:absolute; top:240px; left:0px; width:375px; text-align:center; z-index:50;
+      font-size:37.5px; font-family:bold; letter-spacing:3;
+}
+
+#Clock{
+      position:absolute; top:286.8px; left:0px; width:375px; text-align:center; z-index:50;
+      font-size:12.375px;
+}
+

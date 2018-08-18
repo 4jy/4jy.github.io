@@ -1,0 +1,46 @@
+body {
+	margin:0;
+	padding:0;
+	text-shadow:1px 1px 0px rgba(0,0,0, 0.2);
+	font-weight:100;
+  	text-transform:capitalize;
+	font-family:LM;
+	color:#f3f3f3;
+	letter-spacing:1;
+}
+
+@font-face{
+	font-family:LM;
+	src:url(Stuff/LemonMilk.otf);
+}
+@font-face{
+	font-family:redux;
+	src:url(Stuff/Redux.ttf);
+}
+
+#Widget{
+	position:absolute; top:0px; left:0px; width:375px; height:667px;
+}
+
+#Clock{
+       position:absolute; top:85%; left:47%; width:100%; text-align:left; z-index:50;
+       font-size:8.5vmin; letter-spacing:1.5;
+}
+#ampm{font-size:3.4vmin; position:relative; top:-18px;}
+
+#unlock{
+       position:absolute; top:90%; left:46%; width:100%; text-align:left; z-index:50;
+       font-size:3.3vmin; font-family:redux; text-transform:lowercase;
+       letter-spacing:2;
+}
+
+#id{
+	   position:absolute; top:87%; left:36%; width:10%; z-index:20;
+}
+
+#R{
+       position:absolute; top:81%; left:-1%; width:102%; height:15%; z-index:-90;
+       background-color:black;
+       border:solid 0.8px rgba(238,238,238,0.3);
+       box-shadow:0px 0px 4px rgba(0,0,0,0.7);
+}

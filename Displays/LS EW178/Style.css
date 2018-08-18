@@ -1,0 +1,41 @@
+body {
+      margin:0;
+      padding:0;
+      text-shadow:1px 1px 0px rgba(0,0,0, 0.2);
+      font-weight:100;
+      text-transform:uppercase;
+      font-family:med;
+      color:#f5f5f5;
+      letter-spacing:1;
+      font-size:13.5px;
+}
+
+@font-face{
+      font-family:med;
+      src:url(Stuff/med.otf);
+}
+
+#R1,#R2{
+      position:absolute; top:33px; left:22.5px; width:82.5px; height:82.5px; 
+}
+#R1{background-color:#f5f5f5; z-index:0; -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 100%, 0% 100%);}
+#R2{background-color:#ccc; z-index:10; -webkit-clip-path: polygon(100% 80%, 80% 80%, 80% 100%);}
+
+#weatherIcon{
+      position:absolute; top:43.4px; left:30px; width:67.5px; z-index:20;
+      -webkit-filter:invert(90%);
+}
+
+
+#Clock{
+      position:absolute; top:40px; left:120px; width:375px; text-align:left; z-index:50;
+}
+
+#Weather{
+      position:absolute; top:63.4px; left:120px; width:375px; text-align:left; z-index:10;
+}
+
+#Cal{
+      position:absolute; top:86.7px; left:120px; width:375px; text-align:left; z-index:10;
+}
+
